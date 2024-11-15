@@ -1,8 +1,6 @@
 *** Settings ***
-Library              SeleniumLibrary
-
-*** Variables ***
-#XPath, CSS, ID Selectors...
+Library             SeleniumLibrary
+Resource            Locators/HomePage_Locators.resource
 
 *** Keywords ***
 This is a page function
