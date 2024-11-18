@@ -1,9 +1,10 @@
 *** Settings ***
 Library              SeleniumLibrary
-Resource              ../PageResources/HomePage.resource
+Resource             ../Resources/WebInputs.resource
+Resource             ../Resources/Common.resource
 Test Tags            WebSuite
-Test Setup           Open Browser
-Test Teardown        Close Browser
+Suite Setup          Start Server
+Suite Teardown       Close Server
 
 *** Test Cases ***
 Test with Settings
@@ -12,6 +13,6 @@ Test with Settings
     Log    Hello, world!
 
 Check Title of Webpage
-    Title Should Be                        ${TITLE}
+    Title Should Be                        Title
     Wait Until Page Contains Element       title
 

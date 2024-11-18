@@ -1,5 +1,4 @@
 """
-#Only use this for initial commit
 import git
 
 repo = git.Repo.init('.')
