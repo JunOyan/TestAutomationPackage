@@ -1,3 +1,5 @@
+"""
+#Only use this for initial commit
 import git
 
 repo = git.Repo.init('.')
@@ -9,3 +11,4 @@ repository_url = ""
 remote = repo.create_remote('origin', url=repository_url)
 
 remote.push()
+"""
