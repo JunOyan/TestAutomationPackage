@@ -10,7 +10,7 @@ class HTMLRetriever:
         response = requests.get(url)
         if response.status_code == 200:
             soup = BeautifulSoup(response.content, "html.parser")
-            return soup.prettify()
+            return soup.find_all("a")
         else:
             return f"Code Error {response.status_code}"
     
@@ -25,4 +25,6 @@ web_parser = HTMLRetriever()
 url = "https://practice.expandtesting.com/"
 if __name__ == "__main__":
     output = web_parser.retrieve_html_contents(url)
-    web_parser.output_txt_file(text=output)
+    
+    #web_parser.output_txt_file(text=output)
+    print(output)
