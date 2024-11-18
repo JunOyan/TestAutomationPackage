@@ -1,8 +1,6 @@
 """
-<<<<<<< HEAD
-=======
 #FOR INITIAL COMMIT ONLY
->>>>>>> 6a23e7d8f4e88d0df3436d090c5964e18a455e93
+
 import git
 
 repo = git.Repo.init('.')
