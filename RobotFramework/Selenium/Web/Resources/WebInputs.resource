@@ -4,5 +4,4 @@ Resource        ../PageObject/Navigation.robot
 Resource        ../PageObject/HomePage.robot
 
 *** Keywords ***
-Go to
-    No Operation
+

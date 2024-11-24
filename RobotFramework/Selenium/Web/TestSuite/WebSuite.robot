@@ -8,9 +8,11 @@ Suite Teardown       Close Server
 
 *** Test Cases ***
 Test with Settings
-    [Documentation]    This is a Documentation
+    [Documentation]    This is a Documentation. Two test runs follow the template with values in new lines
     [Tags]    dummy    tagging
-    Log    Hello, world!
+    [Template]    Title Should Be
+    Title1    Title1
+    Title2    Title3
 
 Check Title of Webpage
     Title Should Be                        Title
