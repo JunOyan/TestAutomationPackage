@@ -6,7 +6,7 @@ Resource           ../GlobalVariables.resource
 
 *** Keywords ***
 Start Server
-    Open Browser    ${URL}
+    Open Browser    url=${URL}    browser=${BROWSER}
     
 Close Server
     Close Browser

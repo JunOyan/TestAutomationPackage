@@ -15,5 +15,9 @@ Dummy - Test with Settings
     Title2    Title3
 
 WebSuite - Web Inputs TC
-    [Template]    Assert Web Inputs and Outputs
-    1234    abcd    abcd123!    11/12/2024
+    [Documentation]    Web inputs test case
+    [Setup]            HomePage - Go to Web Inputs
+    [Tags]             WebInputs
+    [Template]         Web Inputs - Test Case Template    
+    1234    abcdef123    p4$$w0rd    11/12/2024
+    1028    thisistext   2947!329    02/14/2012

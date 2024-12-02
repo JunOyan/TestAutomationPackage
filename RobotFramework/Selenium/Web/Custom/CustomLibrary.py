@@ -1,10 +1,13 @@
 from bs4 import BeautifulSoup
 import requests
 
-class HTMLRetriever:
+class CustomLibrary:
     def __init__(self):
         pass
     
+    def get_variable_names(self, d_vars:dict):
+        pass
+
     #retrieve the html contents of a website
     def retrieve_html_contents(self, url:str):
         response = requests.get(url)
@@ -19,12 +22,13 @@ class HTMLRetriever:
         with open(filepath, "w") as file:
             file.write(text)
 
-
+"""
 ###DEBUGGING###
-web_parser = HTMLRetriever()
+web_parser = CustomLibrary()
 url = "https://practice.expandtesting.com/"
 if __name__ == "__main__":
     output = web_parser.retrieve_html_contents(url)
     
     #web_parser.output_txt_file(text=output)
     print(output)
+"""
