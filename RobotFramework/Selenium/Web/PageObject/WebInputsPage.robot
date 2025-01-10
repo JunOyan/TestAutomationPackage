@@ -1,6 +1,7 @@
 *** Settings ***
 Library             SeleniumLibrary
-Library    XML
+Library             DateTime
+Library             XML
 Resource            Locators/WebInputs_Locators.robot
 
 *** Keywords ***
@@ -14,14 +15,16 @@ Web Inputs POM - Get Output Text
     RETURN    ${output}
 
 Web Inputs POM - Get Output Password
-    Wait Until Element Is Visible    ${INPUT_PASSWORD_BOX}
-    ${output}                        Get Text                ${INPUT_PASSWORD_BOX}
+    Wait Until Element Is Visible    ${OUTPUT_PASSWORD_BOX}
+    Wait Until Element Is Enabled    ${OUTPUT_PASSWORD_BOX}
+    ${output}                        Get Text                ${OUTPUT_PASSWORD_BOX}
     RETURN    ${output}
 
 Web Inputs POM - Get Output Date
     Wait Until Element Is Visible    ${OUTPUT_DATE_BOX}
-    ${output}                        Get Text                ${OUTPUT_DATE_BOX}
-    RETURN    ${output}
+    ${date_output}                   Get Text                ${OUTPUT_DATE_BOX}
+    ${date_output}                   Convert Date            ${date_output}                date_format=%Y-%m-%d        result_format=%m%d%Y
+    RETURN    ${date_output}
 
 Web Inputs POM - Input number
     [Arguments]    ${input}

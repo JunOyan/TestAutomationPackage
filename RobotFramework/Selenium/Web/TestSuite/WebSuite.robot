@@ -11,13 +11,12 @@ Dummy - Test with Settings
     [Documentation]    This is a Documentation. Two test runs follow the template with values in new lines
     [Tags]    dummy    tagging
     [Template]    Title Should Be
-    Title1    Title1
-    Title2    Title3
+    Practice Test Automation WebSite
 
 WebSuite - Web Inputs TC
     [Documentation]    Web inputs test case
     [Setup]            HomePage - Go to Web Inputs
     [Tags]             WebInputs
     [Template]         Web Inputs - Test Case Template    
-    1234    abcdef123    p4$$w0rd    11/12/2024
-    1028    thisistext   2947!329    02/14/2012
+    1234    abcdef123    p4$$w0rd    11122024
+    1028    thisistext   2947!329    02142012
