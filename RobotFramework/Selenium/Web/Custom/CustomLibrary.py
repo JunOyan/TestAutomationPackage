@@ -22,6 +22,7 @@ class CustomLibrary:
         with open(filepath, "w") as file:
             file.write(text)
 
+
 """
 ###DEBUGGING###
 web_parser = CustomLibrary()

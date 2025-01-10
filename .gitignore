@@ -6,3 +6,4 @@ report.html
 geckodriver*
 selenium-screenshot*
 venv
+results

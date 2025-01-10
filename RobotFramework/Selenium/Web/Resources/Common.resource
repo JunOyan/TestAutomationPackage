@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation      Keywords for web inputs task
 Library            SeleniumLibrary
-Library            ../Custom/CustomLibrary.py
 Resource           ../GlobalVariables.resource
 
 *** Keywords ***
@@ -10,4 +9,3 @@ Start Server
     
 Close Server
     Close Browser
-
