@@ -14,5 +14,6 @@ HomePage - Go to page link WIP
     Click Element                    ${page_locator_link}
 
 HomePage - Go to Web Inputs
+    [Documentation]    Traverses to WebInputs link in the homepage
     Wait Until Element Is Enabled    ${WEB_INPUTS_LINK}
     Click Element                    ${WEB_INPUTS_LINK}
